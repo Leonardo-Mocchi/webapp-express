@@ -1,10 +1,10 @@
 const router = require('express').Router();
 const MoviesController = require('../controllers/MoviesController')
 
-//index route
+// index route
 router.get('/', MoviesController.index);
 
-//show route
+// show route
 router.get('/:id', MoviesController.show);
 
 module.exports = router;
