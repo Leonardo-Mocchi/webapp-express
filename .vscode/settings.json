@@ -1,7 +1,0 @@
-{
-    "workbench.editor.defaultBinaryEditor": "default",
-    "markdownlint.customRules": [],
-    "markdownlint.config": {
-        "MD024": false,
-    },
-}
