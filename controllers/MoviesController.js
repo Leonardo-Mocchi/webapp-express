@@ -49,8 +49,7 @@ function show(req, res) {
                 id: review.review_id,
                 name: review.reviewer_name,
                 text: review.review_content,
-                /* vote: `${review.review_vote}/5` // !!! this OR the line below!!! returns the max vote since it's on a scale from 1 to 5 */
-                vote: review.review_vote // !!!this line OR the line above!!! returns the vote as it is
+                vote: review.review_vote
             }))
         };
 
