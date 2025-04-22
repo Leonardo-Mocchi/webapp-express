@@ -59,7 +59,24 @@ function show(req, res) {
     })
 };
 
+function createReview(req, res) {
+    const { id } = req.params;
+    const { name, text, vote } = req.body;
+
+    const sql = `
+        INSERT INTO reviews (movie_id, name, text, vote)
+        VALUES (?, ?, ?, ?)
+    `;
+
+    connection.query(sql, [id, name, text, vote], (err, results) => {
+        if (err) return res.status(500).json({ error: err.message });
+
+        res.status(201).json({ message: 'Review added successfully!', reviewId: results.insertId });
+    });
+}
+
 module.exports = {
     index,
-    show
-}
+    show,
+    createReview,
+};

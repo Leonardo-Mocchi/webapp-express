@@ -16,3 +16,14 @@
 4. ~~Inserire le vostre rotte in un router~~
 5. ~~Inserire un middleware per le rotte inesistenti~~
 6. ~~Inserire un middleware per la gestione errori~~
+
+______________________________________________________________
+
+## PART 2
+
+Miglioriamo l’esperienza dell’utente inserendo
+
+### MILESTONE 1 (BACKEND)
+
+[x] Predisponiamo un’API per salvare nel database una nuova recensione legata ad un film
+[x] Testiamola su postman e verifichiamo che nel DB venga effettivamente inserita una nuova recensione
